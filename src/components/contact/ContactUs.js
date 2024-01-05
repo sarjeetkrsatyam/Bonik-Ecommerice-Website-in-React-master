@@ -31,7 +31,7 @@ const ContactUs = () => {
   return (
     <div className="container mt-5">
       <h2 className="mb-3 tect-center">Feel free to reach out with us</h2>
-      <form onSubmit={onSubmit}>
+      <form action="https://formspree.io/f/mayryaaq" method="POST">
         <div className="mb-3">
           <label className="form-label" htmlFor="name">
             Name
@@ -55,7 +55,7 @@ const ContactUs = () => {
         </button>
       </form>
       {
-        submit ? <h3 className='text-center text-success'>Message send successfully! </h3> : null
+        submit ? <h3 className='text-center text-success'>Thanks for contacting me! </h3> : null
       }
     </div>
   )

@@ -58,10 +58,12 @@ const FlashCard = ({ productItems, addToCart }) => {
 
 
                 <div className='img text-center'>
-                  <span className='off-text'>{productItems.discount}% Offffff</span>
+                  {/* <span className='off-text'>{productItems.discount}% Offffff</span> */}
                   
                   <div className=" text-center">
+                    <div className="image-cont">
                     <img src={productItems.cover} alt='' className="cover-imag" />
+                    </div>
                     <div className='rate'>
                     <i className='fa fa-star text-gold'></i>
                     <i className='fa fa-star text-gold'></i>
@@ -69,7 +71,7 @@ const FlashCard = ({ productItems, addToCart }) => {
                     <i className='fa fa-star text-gold'></i>
                     <i className='fa fa-star text-gold'></i>
                   </div>
-                    <h3 className="text-danger">{productItems.name}</h3>
+                    <h5 className="text-danger">{productItems.name}</h5>
                   </div>
                   {/* <div className='product-lik'>
                     <label className="number-manu"> {count}</label> <br />
